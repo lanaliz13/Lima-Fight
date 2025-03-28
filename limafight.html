@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lima Fight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="modalidades.html">Modalidades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Bem-vindo à Lima Fight</h1>
+            <p>Transforme seu corpo e sua mente com nossas artes marciais.</p>
+            <div class="btn-container">
+                <a href="modalidades.html" class="btn">Nossas Modalidades</a>
+            </div>
+        </div>
+        <div class="banner-image">
+            <img src="imagens/logo_lima.png" alt="Lima Fight Logo">
+        </div>
+    </section>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: black;
+        }
+        
+        header {
+            background: black;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            gap: 50px;
+        }
+        
+        nav ul li {
+            margin: 0;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem; /* Aumentei o tamanho da fonte */
+            padding: 50px 18px; /* Aumentei o padding */
+        }
+        
+        nav ul li a:hover {
+            color: red;
+        }
+        
+        .banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70vh; /* Aumentei a altura da seção */
+            padding: 0 10%;
+            margin-top: 80px;
+           
+        }
+        
+        .banner-text {
+            max-width: 50%; /* Mantive o texto com 50% da largura */
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        
+        .banner-text h1 {
+            font-size: 3rem; /* Aumentei o tamanho do título */
+            margin-bottom: 20px;
+        }
+        
+        .banner-text p {
+            font-size: 1.4rem; /* Aumentei o tamanho do texto */
+            margin-bottom: 30px;
+        }
+        
+        .btn-container {
+            text-align: left;
+        }
+        
+        .btn {
+            background: red;
+            color: white;
+            padding: 18px 35px; /* Aumentei o tamanho do botão */
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 1.4rem; /* Aumentei o tamanho da fonte do botão */
+            display: inline-block;
+        }
+        
+        .banner-image {
+            margin-left: 40px; /* Aumentei o espaço entre o texto e a imagem */
+        }
+
+        .banner-image img {
+            max-width: 100%;
+            width: 500px; /* Aumentei o tamanho da imagem */
+            height: auto;
+            margin-top: 100px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            color: black;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 3px solid red;
+            margin-top: 60px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .banner-text {
+                max-width: 80%;
+                margin-bottom: 20px;
+            }
+            
+            .banner-text h1 {
+                font-size: 2.8rem; /* Ajustei o título para telas menores */
+            }
+
+            .banner-text p {
+                font-size: 1.2rem; /* Ajustei o texto para telas menores */
+            }
+
+            .btn {
+                padding: 15px 30px;
+                font-size: 1.2rem; /* Ajustei o tamanho do botão */
+            }
+
+            .banner-image {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+
+            .banner-image img {
+                width: 70%;
+                max-width: 400px; /* Ajustei a largura da imagem para dispositivos menores */
+                margin-top: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul li a {
+                font-size: 1.2rem;
+                padding: 10px 15px;
+            }
+
+            .banner-text h1 {
+                font-size: 2.4rem; /* Ajustei o título para telas muito pequenas */
+            }
+
+            .banner-text p {
+                font-size: 1rem; /* Ajustei o texto para telas muito pequenas */
+            }
+
+            .btn {
+                padding: 12px 25px;
+                font-size: 1.2rem; /* Ajustei o botão para telas muito pequenas */
+            }
+
+            .banner-image {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+        }
+    </style>
+    
+    <footer>
+        <p>&copy; 2025 Lima Fight - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
